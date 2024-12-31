@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогоднее поздравление</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>С Новым Годом, Дианочка!</h1>
+    </header>
+
+    <!-- Снег -->
+    <div class="snowflakes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="greeting">
+        <p>Дорогая Диана, поздравляю тебя с наступающим Новым годом! 🎄 Пусть этот год принесёт тебе радость, успех и множество счастливых моментов! Ты самая сильная, и точно со всем справишься! (доход 800к на пассиве гарантирован, мы к этому обязательно придем)</p>
+    </div>
+
+    <!-- Вставляем кнопку здесь -->
+    <button id="play-music" class="play-music-btn">Включить музыку</button>
+
+    <!-- Новогодние огоньки -->
+    <div class="lights">
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <!-- Лента с фото -->
+    <div class="photo-gallery-container">
+        <div class="photo-gallery">
+            <img src="photo1.jpg" alt="Фото 1">
+            <img src="photo2.jpg" alt="Фото 2">
+            <img src="photo3.jpg" alt="Фото 3">
+            <img src="photo4.jpg" alt="Фото 4">
+            <img src="photo5.jpg" alt="Фото 5">
+            <img src="photo6.jpg" alt="Фото 6">
+            <img src="photo7.jpg" alt="Фото 7">
+            <img src="photo8.jpg" alt="Фото 8">
+            <img src="photo9.jpg" alt="Фото 9">
+            <img src="photo10.jpg" alt="Фото 10">
+            <img src="photo11.jpg" alt="Фото 11">
+            <img src="photo12.jpg" alt="Фото 12">
+            <img src="photo13.jpg" alt="Фото 13">
+            <img src="photo14.jpg" alt="Фото 14">
+            <img src="photo15.jpg" alt="Фото 15">
+            <img src="photo16.jpg" alt="Фото 16">
+            <img src="photo17.jpg" alt="Фото 17">
+            <img src="photo18.jpg" alt="Фото 18">
+            <img src="photo19.jpg" alt="Фото 19">
+            <img src="photo20.jpg" alt="Фото 20">
+        </div>
+        <!-- Надпись поверх ленты с фото -->
+        <div class="photo-caption">
+            <p>Ты всегда красива, прекрасна и мила! Я не могу на тебя насмотреться. 💖</p>
+        </div>
+    </div>
+    <!-- Новогодние огоньки -->
+    <div class="lights">
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="music-player">
+        <audio id="audio-player" loop>
+            <source src="your-music-file.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+    
+    <script>
+        document.getElementById('play-music').addEventListener('click', function() {
+            var audio = document.getElementById('audio-player');
+            audio.play();
+        });
+    </script>
+    
+    <!-- Кнопочки -->
+    <div class="buttons-container">
+        <button class="wishlist-btn">Мой вишлистик</button>
+        <button class="gift-btn">Маленький бесполезный презент прекрасной принцессе</button>
+    </div>
+
+    <!-- Контейнер для анимации картинок -->
+    <div id="gift-images" class="hidden">
+        <div class="full-screen-images">
+            <span class="close-btn hidden">✖</span> <!-- Крестик скрыт по умолчанию -->
+            <img src="gift1.jpg" alt="Gift 1" class="hidden-img">
+            <img src="gift2.jpg" alt="Gift 2" class="hidden-img">
+            <img src="gift3.jpg" alt="Gift 3" class="hidden-img">
+            <img src="gift4.jpg" alt="Gift 4" class="hidden-img">
+        </div>
+    </div>
+
+    <!-- Контейнер для картинки вишлистика -->
+    <div id="wishlist-image" class="hidden">
+        <div class="full-screen-images">
+            <span class="close-btn hidden">✖</span> <!-- Крестик скрыт по умолчанию -->
+            <img src="wishlist.jpg" alt="Wishlist Image" class="hidden-img">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Нижняя надпись -->
+    <footer class="footer">
+        <p>Дианочка, я тебя очень-очень люблю и дорожу тобой! Я всегда готов поддержать тебя, независимо от того, что происходит, особенно в последнее время. Ты — важная часть моей жизни, и я буду рядом (в телефончике как минимум (и если я снова не буду спать как обычно блина сори за это)), когда ты будешь нуждаться в помощи или просто в разговоре!!!</p>
+    </footer>
+
+</body>
+</html>
